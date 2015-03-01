@@ -1,5 +1,6 @@
 # Logs
 *.log
+NOTES.md
 
 # Runtime data
 pids

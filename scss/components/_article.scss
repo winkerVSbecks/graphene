@@ -1,0 +1,45 @@
+
+/* Article
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  @include display(flex);
+  @include align-items(center);
+  min-height: 100vh;
+
+  &--flake {
+    background-image: url('../img/GrapheneFlake.png');
+    background-size: cover;
+  }
+}
+
+.section__body {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px;
+  position: relative;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+p { margin-bottom: 0; }
+
+// p + p { margin-bottom: 2*$base-spacing; }
+
+.lead {
+  font-size: 2.4rem;
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 2*$base-spacing 0;
+  text-align: center;
+}
+
+.single-layer {
+  border-bottom: 1px solid $black;
+  max-width: 25%;
+  margin: 0 auto;
+}

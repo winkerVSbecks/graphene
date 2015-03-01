@@ -23,6 +23,7 @@
   </script>
   <!-- styles -->
   <link rel="stylesheet" href="css/app.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Esteban|Montserrat:400,700' rel='stylesheet' type='text/css'>
   <!-- favicon -->
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <!-- Schema.org markup for Google+ -->
@@ -46,16 +47,47 @@
 
 <body>
 
-  <header class="hero">
-    <div class="hero__body">
+  <header class="hero" id="js-hero">
+    <div class="hero__body"
+         data-anchor-target="#js-hero"
+         data-top="margin-top: 0vh;"
+         data-top-center="margin-top: -100vh;">
       <p class="hero__sub-title hero__sub-title--top">Two Dimensional</p>
       <h1 class="hero__title">GRAPHENE</h1>
       <p class="hero__sub-title hero__sub-title--bottom">Material of the Future</p>
     </div>
   </header>
 
-  <div class="container">
-  </div>
+  <section class="section" id="js-about">
+    <div class="section__body">
+      <p class="single-layer"
+         data-anchor-target="#js-about"
+         data-center-top="border-width: 10px;"
+         data-center="border-width: 1px;">
+      </p>
+      <p class="lead">Graphene is a thin layer of pure carbon. It is made of a single layer of carbon atoms that are bonded together in a repeating pattern of hexagons. Graphene is one million times thinner than paper; so thin that it is actually considered two dimensional.</p>
+      <p class="single-layer"
+         data-anchor-target="#js-about"
+         data-bottom-top="border-width: 20px;"
+         data-top="border-width: 1px;">
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--flake">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+
+  <!-- scripts -->
+  <script type="text/javascript" src="bower_components/skrollr/dist/skrollr.min.js"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
 
 </body>
 </html>

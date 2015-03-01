@@ -19,18 +19,22 @@ $black                  : #444;
 
 $red                    : #fe5b64;
 $yellow                 : #fedd14;
-$grey                   : #f3f3f3;
+$grey                   : #acacaa;
 $dark-grey              : #b4b4b4;
-$white                  : #fff;
+$white                  : #fafbfa;
+
+// F9F9F9
+// BDBDBD
+// 7E7C7D
 
 /* Fonts */
 // Body
-$body-font              : 'inconsolata-medium', Helvetica, Arial, sans-serif;
+$body-font              : 'Esteban', serif;
 $body-font-weight       : normal;
 $body-color             : $black;
 $body-bg                : #fff;
 // Headings
-$header-font            : 'inconsolata-medium', Helvetica, Arial, sans-serif;
+$header-font            : 'Montserrat', sans-serif;
 $header-font-weight     : normal;
 // Misc
 $label-font-weight      : normal;
