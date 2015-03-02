@@ -1,6 +1,29 @@
 
 body {
-  background-color: $white; //#F9F9F9;
+  background-color: $white;
   color: #444;
 }
 
+figure {
+  clear: left;
+  float: left;
+  margin: 0;
+  padding-bottom: $base-spacing;
+  padding-right: 2*$base-spacing;
+  width: auto;
+
+  img {
+    border-radius: 50%;
+    opacity: 0.25;
+    width: 100%;
+
+    @media (min-width: $sm) {
+      width: 320px;
+    }
+  }
+}
+
+figcaption {
+  font-family: $header-font;
+  text-align: center;
+}

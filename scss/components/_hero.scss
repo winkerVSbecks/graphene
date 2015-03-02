@@ -10,18 +10,12 @@
   height: 100vh;
   position: relative;
 
-  &:after {
-    @include linear-gradient(rgba($white, 0), $white);
-    bottom: 0px;
-    content: '';
-    height: 30vh;
-    left: 0px;
-    position: absolute;
-    width: 100%;
-  }
-
   @include hidpi(1.5) {
     background-image: url('../img/hexellence-dark-@2X.png');
+  }
+
+  &:after {
+    @extend %u-skrim--bottom;
   }
 
   &__body {

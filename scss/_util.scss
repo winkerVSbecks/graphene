@@ -1,0 +1,22 @@
+
+/* Utils
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+%u-skrim--bottom {
+  @include linear-gradient(transparent, $white);
+  bottom: 0;
+  content: '';
+  height: 30vh;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+%u-skrim--top {
+  @include linear-gradient($white, transparent, $fallback: transparent);
+  content: '';
+  height: 20vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
