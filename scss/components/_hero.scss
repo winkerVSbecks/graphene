@@ -15,7 +15,7 @@
   }
 
   &:after {
-    @extend %u-skrim--bottom;
+    @include skrim(transparent, $white);
   }
 
   &__body {

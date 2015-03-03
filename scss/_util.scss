@@ -1,22 +1,17 @@
 
 /* Utils
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-%u-skrim--bottom {
-  @include linear-gradient(transparent, $white);
-  bottom: 0;
+@mixin skrim ($col-start, $col-end, $col-fallback: $col-start, $top: false, $size: 30vh) {
+  @include linear-gradient($col-start, $col-end, $fallback: $col-fallback);
   content: '';
-  height: 30vh;
+  height: $size;
   left: 0;
   position: absolute;
   width: 100%;
-}
 
-%u-skrim--top {
-  @include linear-gradient($white, transparent, $fallback: transparent);
-  content: '';
-  height: 20vh;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  @if $top == true {
+    top: 0;
+  } @else {
+    bottom: 0;
+  }
 }

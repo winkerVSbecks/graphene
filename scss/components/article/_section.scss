@@ -1,0 +1,33 @@
+
+/* Various Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  @include display(flex);
+  @include align-items(center);
+  @include transform(translate3d(0, 0, 0));
+  min-height: 100vh;
+  position: relative;
+
+  &--flake {
+    min-height: 100vh;
+
+    &__pieces {
+      background-color: #ccc;
+      background-image: url('../img/GrapheneFlake.png');
+      background-size: cover;
+      color: $white;
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    &:after {
+      @include skrim($white, transparent, transparent, true);
+    }
+  }
+}
+
