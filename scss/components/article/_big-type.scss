@@ -1,0 +1,17 @@
+
+/* Big Type
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.big-type {
+
+  &__line {
+    display: block;
+    font-size: 10vw;
+    letter-spacing: 0.1vw;
+    margin: 0;
+    text-transform: uppercase;
+
+    &--offset {
+      margin-left: 12*$base-spacing;
+    }
+  }
+}

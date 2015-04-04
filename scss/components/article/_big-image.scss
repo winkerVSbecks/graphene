@@ -1,0 +1,46 @@
+
+/* Big Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.big-image {
+  background-color: #ccc;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  &:after {
+    @include skrim(#c2c3c2, transparent, transparent, true);
+  }
+
+  &__attribution {
+    @include ellipsis(200px);
+    border: {
+      width: 2px;
+      style: solid;
+      color: lighten($black, 15%);
+    }
+    bottom: $base-spacing;
+    color: lighten($black, 15%);
+    font-family: $header-font;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.5*$base-spacing;
+    position: absolute;
+    right: $base-spacing;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active {
+      border-color: $black;
+      color: $black;
+    }
+  }
+
+  &--graphite-tape {
+    background-image: url('../img/graphite-tape.jpg');
+    background-position: center;
+  }
+}

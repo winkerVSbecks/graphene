@@ -2,23 +2,6 @@
 /* Base Article Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
-  header {
-    margin-bottom: 4*$base-spacing;
-    text-align: center;
-  }
-
-  h1,
-  h2,
-  h4 {
-    display: inline;
-    letter-spacing: 0.2rem;
-    padding: 0 $base-spacing;
-    text-transform: uppercase;
-
-    &:last-child {
-      border-bottom: 4px solid $black;
-    }
-  }
 
   p {
     font-size: 1.5rem;
@@ -51,15 +34,34 @@
   font-size: 1.6rem;
   margin: 0 auto;
   margin-bottom: 0;
-  max-width: 75%;
+  max-width: 100%;
   text-align: center;
 
   @media (min-width: $sm) and (max-width: $md) {
     font-size: 2rem;
+    max-width: 75%;
   }
 
   @media (min-width: $md) {
     font-size: 2.4rem;
+    max-width: 60%;
   }
 }
 
+.section-title {
+  margin-bottom: 4*$base-spacing;
+  text-align: center;
+
+  h1,
+  h2,
+  h4 {
+    display: inline;
+    letter-spacing: 0.2rem;
+    padding: 0 $base-spacing;
+    text-transform: uppercase;
+
+    &:last-child {
+      border-bottom: 4px solid $black;
+    }
+  }
+}
