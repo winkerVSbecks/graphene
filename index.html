@@ -105,19 +105,40 @@
   </section>
 
   <section class="section">
-    <div class="section__body big-type">
-      <h1 class="big-type__line">graphene</h1>
-      <h1 class="big-type__line u-text-right">is just</h1>
-      <h1 class="big-type__line u-text-center">carbon</h1>
-      <h1 class="big-type__line">but, graphene</h1>
-      <h1 class="big-type__line u-text-right">is special</h1>
+    <img class="u-full-width u-padding-extra text" src="img/graphene-is-special.svg">
+  </section>
+
+  <section class="section section--half">
+    <div class="slides">
+      <div class="slides">Your Content </div>
+      <div class="slides">Your Content </div>
+      <div class="slides">Your Content </div>
+      <div class="slides">Your Content </div>
+      <div class="slides">Your Content </div>
+    </div>
+    <div class="slides-nav">
+      <div data-slide="1" class="slides-nav__item">1</div>
+      <div data-slide="2" class="slides-nav__item">2</div>
+      <div data-slide="3" class="slides-nav__item">3</div>
+      <div data-slide="4" class="slides-nav__item">4</div>
     </div>
   </section>
 
   <!-- scripts -->
   <script type="text/javascript" src="bower_components/skrollr/dist/skrollr.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
   <script type="text/javascript">
-    var s = skrollr.init();
+    $(document).ready(function(){
+      $('.slides').owlCarousel({
+        items: 1,
+        // dots: false,
+        nav: false,
+        dotsContainer: '.slides-nav'
+      });
+
+      skrollr.init();
+    });
   </script>
 
 </body>
