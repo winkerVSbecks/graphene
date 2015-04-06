@@ -110,17 +110,41 @@
 
   <section class="section section--half">
     <div class="slides">
-      <div class="slides">Your Content </div>
-      <div class="slides">Your Content </div>
-      <div class="slides">Your Content </div>
-      <div class="slides">Your Content </div>
-      <div class="slides">Your Content </div>
+      <div class="slide slide--hexagon">
+        <div class="slide__body">
+          <h5>
+            It&rsquo;s Made Out of Millions of Tiny Flakes of 2-Dimensional Crystals<br/>With Carbon Atoms Arranged in a Hexagonal Pattern
+          </h5>
+        </div>
+      </div>
+      <div class="slide slide--thin">
+        <div class="slide__body">
+          <h2>It's the world's thinnest material</h2>
+        </div>
+      </div>
+      <div class="slide slide--strong">
+        <div class="slide__body">
+          <h1 class="u-margin-zero u-emphasis ">It&rsquo;s Incredibly Strong</h1>
+          <p>More Than 100 Times Stronger Than Steel of the Same Thickness</p>
+        </div>
+      </div>
+      <div class="slide slide--electrons">
+        <div class="slide__body">
+          <h2 class="u-margin-zero u-emphasis">Electrons Move Through It<br/>as if They Had Zero Mass</h2>
+        </div>
+      </div>
+      <div class="slide slide--conductor">
+        <div class="slide__body">
+          <h3 class="u-emphasis">It&rsquo;s a Great Conductor<br/>About 10 Times Better Than Copper</h3>
+        </div>
+      </div>
     </div>
     <div class="slides-nav">
-      <div data-slide="1" class="slides-nav__item">1</div>
-      <div data-slide="2" class="slides-nav__item">2</div>
-      <div data-slide="3" class="slides-nav__item">3</div>
-      <div data-slide="4" class="slides-nav__item">4</div>
+      <div class="slides-nav__item">1</div>
+      <div class="slides-nav__item">2</div>
+      <div class="slides-nav__item">3</div>
+      <div class="slides-nav__item">4</div>
+      <div class="slides-nav__item">5</div>
     </div>
   </section>
 
@@ -132,7 +156,6 @@
     $(document).ready(function(){
       $('.slides').owlCarousel({
         items: 1,
-        // dots: false,
         nav: false,
         dotsContainer: '.slides-nav'
       });

@@ -1,12 +1,53 @@
 
 /* Slides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.slides {
-  border: 1px solid $black;
+.slide {
+  color: $white;
   height: 50vh;
-  line-height: 50vh;
   text-align: center;
+  position: relative;
   width: 100%;
+
+  &--hexagon {
+    background-image: url('../img/hexellence-dark.png');
+    background-size: 148px 172px;
+    color: $black;
+
+    @include hidpi(1.5) {
+      background-image: url('../img/hexellence-dark-@2X.png');
+    }
+  }
+
+  &--strong {
+    background-image: url('../img/strong.jpg');
+    background-position: center 30%;
+    background-size: cover;
+  }
+
+  &--thin {
+    background-image: url('../img/thin.jpg');
+    background-position: center 20%;
+    background-size: cover;
+  }
+
+  &--electrons {
+    background-image: url('../img/electrons.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  &--conductor {
+    background-image: url('../img/conductor.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  &__body {
+    @include transform(translateY(-50%));
+    position: relative;
+    top: 50%;
+  }
 }
 
 .slides-nav {
@@ -23,12 +64,13 @@
     display: inline-block;
     font-family: $header-font;
     font-size: 2rem;
+    font-weight: $header-font-weight;
     line-height: 2;
     text-align: center;
     width: 3*$base-spacing;
 
     &.active {
-      color: $black;
+      color: $white;
     }
   }
 }
