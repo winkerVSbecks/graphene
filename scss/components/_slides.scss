@@ -31,7 +31,7 @@
   }
 
   &--electrons {
-    background-image: url('../img/electrons.jpg');
+    background-image: url('../img/electrons.svg');
     background-position: center;
     background-size: cover;
   }
@@ -51,11 +51,12 @@
 }
 
 .slides-nav {
+  background-color: $black;
   bottom: 0;
   left: 0;
-  padding-left: 2*$base-spacing;
+  margin-left: 3*$base-spacing;
   position: absolute;
-  width: 100%;
+  width: auto;
   z-index: 1;
 
   &__item {
@@ -65,7 +66,7 @@
     font-family: $header-font;
     font-size: 2rem;
     font-weight: $header-font-weight;
-    line-height: 2;
+    line-height: 3*$base-spacing;
     text-align: center;
     width: 3*$base-spacing;
 
@@ -73,4 +74,13 @@
       color: $white;
     }
   }
+}
+
+.electron-box {
+  background-color: $black;
+  border: 10px solid $white;
+  color: $white;
+  padding: 4*$base-spacing;
+  margin: 0 auto;
+  max-width: 640px;
 }
